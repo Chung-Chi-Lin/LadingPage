@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/aboi2-p27ne-001.ico" type="image/x-icon">
+  <title>紳士貓管家</title>
+  <link rel="stylesheet" href="./stylesheets/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&  display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <i class="bi bi-github text-warning h5 pe-1"></i>
+          紳士貓管家</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse"id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./question.html">服務介紹</a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./payment.html">方案費用</a>
+          </li>
+          <div class="vr"></div>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="./question.html">常見問題</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="btn btn-info" href="./payment.html">個人專屬服務</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+  <header class="text-center py-5 mb-5" style="background-image:url('./images/bg_paper.png') ;">
+    <p class="text-info fw-bold">HAPPY LIFE</p>
+    <h2 class="fw-bold">讓我們打理你的生活</h2>
+  </header>
+  <!-- 表單 -->
+
+  <section class="py-5 container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!-- 方案 -->
+        <section class="p-lg-5 shadow-lg">
+          <h3 class="deco-line mb-4">選擇方案</h3>
+          <div class="row row-cols-1 row-cols-lg-3 mb-4">
+            <div class="col mb-3">
+              <button type="button" class="btn btn-outline-info w-100 btn-lg text-dark py-3">
+                單月小助手<br class="d-none d-lg-block">NT 298/月
+              </button>
+            </div>
+            <div class="col mb-3">
+              <button type="button" class="btn btn-outline-info w-100 btn-lg text-dark py-3">
+                單月全包辦<br class="d-none d-lg-block">NT 888/月
+              </button>
+            </div>
+            <div class="col mb-3">
+              <button type="button" class="btn btn-outline-info w-100 btn-lg py-3 btn-special active">
+                客製化方案<br class="d-none d-lg-block">客服詢價
+              </button>
+            </div>
+          </div>
+          <!-- 填寫資料 -->
+          <h3 class="deco-line mb-3">填寫資料</h3>
+          <form class="needs-validation" novalidate>
+            <div class="row g-2">
+              <div class="col-lg-6">
+                <label for="validationFirstName" class="form-label">名字</label>
+                <input type="text" class="form-control" id="validationFirstName" placeholder="美玉" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 名
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="validationLastName" class="form-label">姓氏</label>
+                <input type="text" class="form-control" id="validationLastName" placeholder="王" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 姓
+                </div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="PhoneNumber" class="form-label">手機號碼</label>
+                <input type="tel" class="form-control" id="PhoneNumber" placeholder="0989456123" required minlength="10" maxlength="10">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 電話號碼
+                </div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="Email" class="form-label">電子郵件</label>
+                <input type="email" class="form-control" id="Email" placeholder="name@example.com" required="">
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 Email
+                </div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="address" class="form-label">住址</label>
+                <input type="text" class="form-control" id="address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 住址
+                </div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="contentTime" class="form-label">方便聯繫時間</label>
+                <select class="form-select" id="contentTime" required>
+                  <option selected value="13:00~17:00">13:00~17:00</option>
+                  <option value="17:00~22:00">17:00~22:00</option>
+                  <option value="22:00~8:00">22:00~8:00</option>
+                  <option value="8:00~13:00">8:00~13:00</option>
+                </select>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  請輸入 住址
+                </div>
+              </div>
+              <!-- 加購服務 -->
+              <div class="mb-3 col-12">
+                <p>加購服務</p>
+                  <input class="form-check-input" type="checkbox" value="cleanHouse" id="invalidCheck" required>
+                  <label class="form-check-label user-select-none" for="invalidCheck">
+                    每週一清掃家裡+100
+                  </label>
+                  <div class="mx-4 d-inline">
+                    <input class="form-check-input" type="checkbox" value="massage" id="invalidCheck2" required>
+                    <label class="form-check-label user-select-none" for="invalidCheck2">
+                      泰式按摩+150
+                    </label>
+                  </div>
+                  <input class="form-check-input" type="checkbox" value="complain" id="invalidCheck3" required>
+                  <label class="form-check-label user-select-none" for="invalidCheck3">
+                    聽你抱怨+999
+                  </label>
+                  <div class="valid-feedback">
+                    Thank you!
+                  </div>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="remarkTextarea" class="form-label">備註說明</label>
+                <textarea class="form-control" id="remarkTextarea" rows="3" required></textarea>
+                <div class="valid-feedback">
+                  Thank you!
+                </div>
+              </div>
+              <div class="text-end col-12">
+                <button type="submit" class="btn btn-info w-100">選擇方案</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡區塊 -->
+  <section class="bg-light mt-5">
+    <h2 class="text-center fw-bold pt-4">需要其他協助嗎?</h2>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-lg-3">
+        <div class="col">
+          <div class="card shadow-sm mt-4 mb-lg-5 mb-0">
+            <div class="card-body text-center">
+              <a href="./payment.html" class="btn btn-white fs-4 border-0 stretched-link">
+                <i class="bi bi-telephone-fill text-info"></i>
+                02-2433-6666
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm mt-4 mb-lg-5 mb-0">
+            <div class="card-body text-center">
+              <a href="./index.html" class="btn btn-white fs-4 border-0 stretched-link">
+                <i class="bi bi-facebook text-info"></i>
+                紳士貓管家
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm mt-4 mb-lg-5 mb-5">
+            <div class="card-body text-center">
+                <a href="./question.html" class="btn btn-white fs-4 border-0 stretched-link">
+                  <i class="bi bi-question-lg text-info"></i>
+                  常見問題
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="text-center bg-secondary py-3" style="height: 64px;">
+    <small class="text-white">Copyright © 2021 小懶蟲.All rights reserved.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="./javascripts/all.js"></script>
+</body>
+</html>
